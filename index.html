@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Patel - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="dark-theme">
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="logo">Rahul Patel</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="I'm Your Name">I'm Rahul Patel</h1>
+                <p class="subtitle">Full Stack Developer & Designer</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+            <div id="hero-3d"></div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-image-container">
+                    <img src="Img/profile.png" alt="Your Name" class="profile-image">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate web developer with a keen eye for design. I love creating beautiful and functional websites that provide great user experiences. With a background in both front-end and back-end development, I bring a holistic approach to every project I work on.</p>
+                    <a href="Img/Resume.pdf" class="btn">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 99%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 99%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-react"></i>
+                        <h3>React.js</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-node-js"></i>
+                        <h3>Node.js</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-database"></i>
+                        <h3>MongoDB / SQL</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-server"></i>
+                        <h3>Express.js</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-code"></i>
+                        <h3>Next.js</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-bolt"></i>
+                        <h3>GSAP / Three.js</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-code"></i>
+                        <h3>C Programming</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                    </div>                    
+                    <div class="skill">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Python (AI & Automation)</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-lock"></i>
+                        <h3>Cybersecurity (Kali Linux)</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 65%;"></div></div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title" style="font-size: 2rem; color: #fff; text-align: center; margin-bottom: 20px;">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Img/User-Dashboard_Hotel.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Hotel Management System User-Dashboard</h3>
+                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">A user-friendly dashboard for hotel guests to book rooms, check-in/out, and manage their stay. Built with HTML, CSS, JavaScript, Node.js, Express and JWT authentication.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Img/Admin-Dashboard_Hotel.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Hotel Management System Admin-Dashboard</h3>
+                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">An admin panel to manage hotel bookings, customers, and room availability.  Built with HTML, CSS, JavaScript, Node.js, Express and JWT authentication.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Img/Elibrary Managemant System.png" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3 style="font-size: 1.5rem; color: #00c3ff;">E-Library Management System</h3>
+                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
+                            An admin panel to manage library inventory, Issue Book and return books online. Built with HTML, CSS, JavaScript, Node.js, Express and JWT authentication.
+                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Img/Weather.png" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Weather Web App</h3>
+                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
+                            A dynamic web app to check real-time weather updates, temperature, and forecasts.  
+                            Built with HTML, CSS, JavaScript, OpenWeather API for live data.
+                        </p>
+                        <a href="https://code-with-rahul.netlify.app/" class="project-link">View Project</a>
+                    </div>
+                </div>               
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Img/Elibrary Managemant System.png" alt="Project 5">
+                    </div>
+                    <div class="project-info">
+                        <h3 style="font-size: 1.5rem; color: #00c3ff;">AI-Powered Voice Assistant</h3>
+                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">An offline AI assistant using Whisper (STT), Llama-2 (NLP), and Coqui TTS for text-to-speech. Developed in Python for a futuristic experience.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Img/Elibrary Managemant System.png" alt="Project 6">
+                    </div>
+                    <div class="project-info">
+                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Futuristic Portfolio Website</h3>
+                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">A highly animated personal portfolio using GSAP, Three.js, and Framer Motion. Features smooth transitions and dark/light mode.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rahul Patel. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/rahulpatel51"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rahul-patel231/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/RahulPatel11131"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
