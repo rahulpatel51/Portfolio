@@ -17,10 +17,10 @@ Welcome to my personal portfolio website! This project is designed to showcase m
   ## 📷 Portfolio Preview
 
 ### 🔹 Home Page  
-![Home Page](https://github.com/rahulpatel51/Portfolio/blob/main/images/home.png?raw=true)
+![Home Page](https://github.com/rahulpatel51/Portfolio/blob/main/Page1.png)
 
 ### 🔹 Skill Section  
-![Projects Showcase](https://github.com/rahulpatel51/Portfolio/blob/main/images/projects.png?raw=true)
+![Projects Showcase](https://github.com/rahulpatel51/Portfolio/blob/main/Page2.png)
 
 
 ## 📂 Folder Structure  
