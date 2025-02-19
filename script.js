@@ -32,13 +32,34 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // Form submission
-  const form = document.getElementById("contact-form")
-  form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    // Here you would typically send the form data to a server
-    alert("Thank you for your message! I will get back to you soon.")
-    form.reset()
-  })
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Page refresh hone se roke
+
+    // Input values fetch karo
+    let formData = new FormData(this);
+    let data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    fetch("https://script.google.com/macros/s/AKfycbxzBjMpwgIgCIgtYuaz9jcMFoeGmdnmqhug6KDvf1mLY0iFgDwfJtYnTk8CHpFc3whB/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+    })
+    .then(() => {
+        // Custom Alert Message
+        alert("✅ Message sent successfully!\nThank you for your message! I will get back to you soon.");
+        document.getElementById("contact-form").reset(); // Form clear karne ke liye
+    })
+    .catch(error => {
+        // Custom Error Alert Message
+        alert("❌ Error submitting form. Please try again.");
+        console.error("Error:", error);
+    });
+});
+
 
   // Intersection Observer for animations
   const sections = document.querySelectorAll("section")
@@ -186,27 +207,3 @@ document.addEventListener("DOMContentLoaded", () => {
     retina_detect: true,
   })
 })
-
-const form = document.getElementById("contact-form");
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    let formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
-
-    fetch("https://script.google.com/macros/s/AKfycby2tL-CVimKEZ7FU-r2LcGv8tgMVpLaq_ds9BT5R83gwC8Y_2xpCPxRFEMLDQUcn-vG/exec", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert("Thank you for your message! I will get back to you soon.");
-        form.reset();
-    })
-    .catch(error => console.error("Error:", error));
-});
