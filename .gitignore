@@ -1,0 +1,10 @@
+# Ignore img folder (Sabhi image files ko ignore karega)
+img/
+
+# Optional: Specific image formats ignore karne ke liye
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
