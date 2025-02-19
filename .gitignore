@@ -1,5 +1,5 @@
 # Ignore img folder (Sabhi image files ko ignore karega)
-Img/
+.Img
 
 # Optional: Specific image formats ignore karne ke liye
 *.png
