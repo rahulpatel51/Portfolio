@@ -12,7 +12,16 @@ Welcome to my personal portfolio website! This project is designed to showcase m
 ## 🛠️ Tech Stack  
 - **HTML** – Structuring the content  
 - **CSS** – Styling with animations and responsiveness  
-- **JavaScript** – Adding interactivity and dynamic elements  
+- **JavaScript** – Adding interactivity and dynamic elements
+
+  ## 📷 Portfolio Preview
+
+### 🔹 Home Page  
+![Home Page](https://github.com/rahulpatel51/Portfolio/blob/main/images/home.png?raw=true)
+
+### 🔹 Skill Section  
+![Projects Showcase](https://github.com/rahulpatel51/Portfolio/blob/main/images/projects.png?raw=true)
+
 
 ## 📂 Folder Structure  
 
