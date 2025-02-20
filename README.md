@@ -43,9 +43,6 @@ Portfolio/ ├── index.html # Main HTML file ├── css/ │ ├── st
 
 ---
 
-
----
-
 ## 📤 Google Sheets Integration  
 
 The contact form is integrated with Google Sheets using **FormSubmit**. When a user submits their name, email, and message, the data is automatically saved in your Google Sheet.  
