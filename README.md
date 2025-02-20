@@ -31,7 +31,7 @@ Welcome to my personal portfolio website! This project is designed to showcase m
 ![Skill Section](https://github.com/rahulpatel51/Portfolio/blob/main/Page2.png)  
 
 ### 🔹 Google Sheets Integration  
-![Google Sheets](https://github.com/rahulpatel51/Portfolio/blob/main/google-sheet.png)  
+![Google Sheets](https://github.com/rahulpatel51/Portfolio/blob/main/Google_Sheet.png)  
 Form submissions are saved directly to Google Sheets for easy management.  
 
 ---
