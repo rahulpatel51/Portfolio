@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Patel - Personal Portfolio</title>
+    <meta name="description" content="Rahul Patel - Full Stack Developer & Designer. Expert in MERN, TypeScript, React, Node.js.">
+    <meta name="keywords" content="Rahul Patel, Full Stack Developer, MERN, React, Node.js, Portfolio">
+    <meta name="author" content="Rahul Patel">
+    <title>Rahul Patel | Full Stack Developer & Designer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
-<body class="dark-theme">
+<body>
+    <!-- Particles Background -->
     <div id="particles-js"></div>
+    
+    <!-- Header Navigation -->
     <header>
         <nav>
-            <div class="logo">Rahul Patel</div>
+            <div class="logo">
+                <span class="logo-text">Rahul Patel</span>
+                <span class="logo-dot"></span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -29,295 +44,186 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1 class="glitch" >I'm Rahul Patel</h1>
-                <p class="subtitle">Full Stack Developer & Designer</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
+                <div class="hero-badge">✨ Helping Ideas Become Reality ✨</div>
+                <h1 class="glitch" data-text="Rahul Patel">Rahul Patel</h1>
+                <div class="typed-container">
+                    <span class="typed-prefix">I'm a </span>
+                    <span class="typed-text"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="hero-description">Crafting digital experiences with cutting-edge technology and creative design.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary"><span>Let's Talk</span><i class="fas fa-arrow-right"></i></a>
+                    <a href="#projects" class="btn-secondary"><span>View Work</span><i class="fas fa-code"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-number">14+</span><span class="stat-label">Projects</span></div>
+                    <div class="stat"><span class="stat-number">1+</span><span class="stat-label">Years Exp</span></div>
+                    <div class="stat"><span class="stat-number">15+</span><span class="stat-label">Technologies</span></div>
+                </div>
             </div>
-            <div id="hero-3d"></div>
+            <div class="hero-scroll-indicator"><span>Scroll</span><i class="fas fa-chevron-down"></i></div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="profile-image-container">
-                    <img src="Img/ProfileImg.png" alt="Profile Image" class="profile-image">
-                </div>
-                <div class="about-text">
-                    <p>Hello! I'm a passionate web developer with a keen eye for design. I love creating beautiful and functional websites that provide great user experiences. With a background in both front-end and back-end development, I bring a holistic approach to every project I work on.</p>
-                    <a href="Img/Rahul Patel - Resume.pdf" class="btn">Download CV</a>
+            <div class="container">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-content">
+                    <div class="about-image-wrapper">
+                        <div class="profile-image-container">
+                            <img src="Img/ProfileImg.png" alt="Rahul Patel" class="profile-image">
+                        </div>
+                    </div>
+                    <div class="about-text-wrapper">
+                        <h3>I'm <span class="highlight">Rahul Patel</span></h3>
+                        <p>I'm a passionate Full Stack Developer with expertise in building scalable web applications. I love crafting beautiful, performant, and user-friendly digital experiences. With a strong foundation in both front-end and back-end technologies, I bring ideas to life with clean code and modern design principles.</p>
+                        
+                        <div class="values-grid">
+                            <div class="value-item"><i class="fas fa-lightbulb"></i><span>Problem Solver</span><small>I solve real problems with smart solutions.</small></div>
+                            <div class="value-item"><i class="fas fa-rocket"></i><span>Fast Learner</span><small>Always learning, always improving.</small></div>
+                            <div class="value-item"><i class="fas fa-search"></i><span>Detail Oriented</span><small>Care about the little things that matter.</small></div>
+                            <div class="value-item"><i class="fas fa-heart"></i><span>Client Focused</span><small>Your satisfaction is my top priority.</small></div>
+                        </div>
+                        
+                        <div class="about-info">
+                            <div><i class="fas fa-map-marker-alt"></i> Noida, India</div>
+                            <div><i class="fas fa-envelope"></i> ra.rahul11161@gmail.com</div>
+                            <div><i class="fas fa-calendar-alt"></i>Available for Work (Freelance/Full-Time)</div>
+                        </div>
+                        <a href="Img/Rahul Patel - Resume.pdf" class="btn-download" download><i class="fas fa-download"></i> Download CV</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section id="skills" class="skills">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 99%;"></div></div>
+            <div class="container">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <div class="skills-container">
+                    <div class="skill" data-level="99"><i class="fab fa-html5"></i><h3>HTML5</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">99%</span></div>
+                    <div class="skill" data-level="99"><i class="fab fa-css3-alt"></i><h3>CSS3</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">99%</span></div>
+                    <div class="skill" data-level="95"><i class="fab fa-js"></i><h3>JavaScript</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">95%</span></div>
+                    <div class="skill" data-level="95"><i class="fab fa-react"></i><h3>React.js</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">95%</span></div>
+                    <div class="skill" data-level="95"><i class="fab fa-node-js"></i><h3>Node.js</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">95%</span></div>
+                    <div class="skill" data-level="90"><i class="fas fa-database"></i><h3>MongoDB / SQL</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">90%</span></div>
+                    <div class="skill" data-level="95"><i class="fas fa-server"></i><h3>Express.js</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">95%</span></div>
+                    <div class="skill" data-level="80"><i class="fab fa-react"></i><h3>Next.js</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">80%</span></div>
+                    <div class="skill" data-level="75"><i class="fas fa-code"></i><h3>C Programming</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">75%</span></div>
+                    <div class="skill" data-level="65"><i class="fas fa-shield-alt"></i><h3>Cybersecurity</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">65%</span></div>
+                    <div class="skill" data-level="85"><i class="fab fa-microsoft"></i><h3>TypeScript</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">85%</span></div>
+                    <div class="skill" data-level="75"><i class="fas fa-brain"></i><h3>AI & OpenAI</h3><div class="skill-bar"><div class="skill-level"></div></div><span class="skill-percent">75%</span></div>
                 </div>
-                <div class="skill">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 99%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-react"></i>
-                    <h3>React.js</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-node-js"></i>
-                    <h3>Node.js</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-database"></i>
-                    <h3>MongoDB / SQL</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-server"></i>
-                    <h3>Express.js</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-code"></i>
-                    <h3>Next.js</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-code"></i>
-                    <h3>C Programming</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
-                </div>                    
-                <div class="skill">
-                    <i class="fas fa-lock"></i>
-                    <h3>Cybersecurity (Kali Linux)</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 65%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-code"></i>
-                    <h3>TypeScript (TSX)</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-brain"></i>
-                    <h3>AI (ChatGPT & OpenAI)</h3>
-                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
-                </div>
-            </div>                
+            </div>
         </section>
+
+        <!-- Quality Badges Section -->
+        <section class="quality-section">
+            <div class="container">
+                <div class="quality-grid">
+                    <div class="quality-card"><i class="fas fa-star"></i><h4>Quality Work</h4><p>Pixel-perfect & polished deliverables</p></div>
+                    <div class="quality-card"><i class="fas fa-clock"></i><h4>On Time</h4><p>Deadline-driven development</p></div>
+                    <div class="quality-card"><i class="fas fa-comments"></i><h4>Great Communication</h4><p>Transparent & responsive</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
         <section id="projects" class="projects">
-            <h2 class="section-title" style="font-size: 2rem; color: #fff; text-align: center; margin-bottom: 20px;">My Projects</h2>
-            <div class="project-grid">
-                <!-- Hostel Management System Admin Dashboard -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="Img/Hostel Admin.png" alt="Hostel Management Admin Dashboard">
-            </div>
-            <div class="project-info">
-                <h3 style="font-size: 1.5rem; color: #00c3ff;">Hostel Management System – Admin Dashboard</h3>
-                <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                    An advanced Admin Dashboard for managing hostel rooms, student records, bookings, and payments. 
-                    Built with MERN stack and JWT authentication.
-                </p>
-                <a href="https://hostel-admin-frontend.vercel.app/" class="project-link">View Project</a>
-            </div>
-        </div>
-
-        <!-- Hostel Management System Booking System -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="Img/Hostel Booking.png" alt="Hostel Management Booking System">
-            </div>
-            <div class="project-info">
-                <h3 style="font-size: 1.5rem; color: #00c3ff;">Hostel Management System – Booking System</h3>
-                <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                    A booking system where students can browse hostels, check availability, and book rooms online. 
-                    Built with MERN stack, secure payments, and role-based access.
-                </p>
-                <a href="https://hostel-booking-frontend-phi.vercel.app/" class="project-link">View Project</a>
-            </div>
-        </div>
-
-        <!-- Online Food Delivery Platform Admin Dashboard -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="Img/Food Delivery Admin.png" alt="Food Delivery Admin Dashboard">
-            </div>
-            <div class="project-info">
-                <h3 style="font-size: 1.5rem; color: #00c3ff;">Online Food Delivery Platform – Admin Dashboard</h3>
-                <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                    A powerful Admin Dashboard to manage restaurants, users, orders, and payments. 
-                    Built with MERN, TypeScript, and JWT authentication.
-                </p>
-                <a href="https://food-delivery-admin-steel.vercel.app/auth/login" class="project-link">View Project</a>
-            </div>
-        </div>
-
-        <!-- Online Food Delivery Platform Order Management -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="Img/Food Delivery User.png" alt="Food Delivery Order Management">
-            </div>
-            <div class="project-info">
-                <h3 style="font-size: 1.5rem; color: #00c3ff;">Online Food Delivery Platform – Order Management</h3>
-                <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                    A real-time order management system for customers and restaurants, including order tracking 
-                    and delivery updates. Built with MERN and Socket.io.
-                </p>
-                <a href="https://food-delivery-user-gold.vercel.app/" class="project-link">View Project</a>
-            </div>
-        </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Food-Hub.png" alt="Food Hub">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Food Hub</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                            A feature-rich online food delivery platform like Swiggy, built with MERN and TypeScript. Offers restaurant listings, real-time tracking, and seamless order management.
-                        </p>
-                        <a href="https://food-hub-ashen-chi.vercel.app/" class="project-link">View Project</a>
-                    </div>
-                </div>                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Ecommerce-Website.png" alt="E-commerce Website">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">E-commerce Website</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                            A fully functional E-commerce website built with MERN, and TypeScript. Features include product listings, cart management, and a seamless checkout process.
-                        </p>
-                        <a href="https://ecommerce-website-rho-lake.vercel.app/" class="project-link">View Project</a>
-                    </div>
-                </div> 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Home.png" alt="Hostel Booking WebApp">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Hostel Booking WebApp</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                            A feature-rich Hostel Booking WebApp built with MERN and TypeScript. Users can browse hostels, check availability, book rooms, make secure payments, and manage their bookings with ease.
-                        </p>
-                        <a href="https://hostel-booking-web-app.vercel.app/" class="project-link">View Project</a>
-                    </div>
-                </div>     
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Home2.png" alt="Hostel Booking WebApp">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Hostel Booking WebApp</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                            A feature-rich Hostel Booking WebApp built with MERN and TypeScript. Users can browse hostels, check availability, book rooms, make secure payments, and manage their bookings with ease.
-                        </p>
-                        <a href="https://hostel-booking-web-app-2.vercel.app/" class="project-link">View Project</a>
-                    </div>
-                </div>                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Weather.png" alt="Project 3">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Weather Web App</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                            A dynamic web app to check real-time weather updates, temperature, and forecasts.  
-                            Built with HTML, CSS, JavaScript, OpenWeather API for live data.
-                        </p>
-                        <a href="https://code-with-rahul.netlify.app/" class="project-link">View Project</a>
-                    </div>
-                </div>               
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Game_Page.png" alt="Project 5">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Tic Tac Toe Game</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">A futuristic and interactive Tic-Tac-Toe game with player vs player and player vs AI (Minimax Algorithm) mode. Built using HTML, CSS, and JavaScript.</p>
-                        <a href="https://tic-tac-toe-game-rahul-patels-projects-dc68615d.vercel.app/" class="project-link">View Project</a>
-                    </div>
-                </div>  
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Chat Section.png" alt="Real-Time Chat Application">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Real-Time Chat Application</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                            This is a simple real-time chat application built using HTML, CSS, JavaScript, and Socket.io. Users can join the chat by entering their name and start chatting instantly.
-                        </p>
-                        <a href="https://chatapplication-rzg4.onrender.com/" class="project-link">View Project</a>
-                    </div>
-                </div>  
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/User-Dashboard_Hotel.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Hotel Management System User-Dashboard</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">A user-friendly dashboard for hotel guests to book rooms, check-in/out, and manage their stay. Built with HTML, CSS, JavaScript, Node.js, Express and JWT authentication.</p>
-                        <a href="https://github.com/rahulpatel51/Hotel-Management-System" class="project-link">View Project</a>
-                    </div>
+            <div class="container">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <div class="project-grid">
+                    <!-- 14 Projects -->
+                    <div class="project-card"><div class="project-image"><img src="Img/Hostel Admin.png" alt="Hostel Admin Dashboard" loading="lazy"><div class="project-links"><a href="https://hostel-admin-frontend.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Hostel Admin Dashboard</h3><p>Complete hostel management system with room booking, student records, and payment tracking.</p><div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span><span>JWT</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Hostel Booking.png" alt="Hostel Booking System" loading="lazy"><div class="project-links"><a href="https://hostel-booking-frontend-phi.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Hostel Booking System</h3><p>Student-friendly platform to browse, book, and manage hostel rooms with secure payments.</p><div class="project-tech"><span>MERN</span><span>Razorpay</span><span>TypeScript</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Food Delivery Admin.png" alt="Food Delivery Admin" loading="lazy"><div class="project-links"><a href="https://food-delivery-admin-steel.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Food Delivery Admin</h3><p>Powerful admin dashboard to manage restaurants, orders, and analytics.</p><div class="project-tech"><span>MERN</span><span>TypeScript</span><span>JWT</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Food Delivery User.png" alt="Food Delivery Order" loading="lazy"><div class="project-links"><a href="https://food-delivery-user-gold.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Food Delivery Order Mgmt</h3><p>Real-time order tracking with Socket.io for live updates.</p><div class="project-tech"><span>MERN</span><span>Socket.io</span><span>Tailwind</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Food-Hub.png" alt="Food Hub" loading="lazy"><div class="project-links"><a href="https://food-hub-ashen-chi.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Food Hub</h3><p>Full-featured food delivery platform like Swiggy with cart and tracking.</p><div class="project-tech"><span>MERN</span><span>Redux</span><span>TypeScript</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Ecommerce-Website.png" alt="E-commerce" loading="lazy"><div class="project-links"><a href="https://ecommerce-website-rho-lake.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>E-commerce Platform</h3><p>Complete online store with cart, checkout, and payment integration.</p><div class="project-tech"><span>MERN</span><span>Stripe</span><span>TypeScript</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Home.png" alt="Hostel Booking WebApp" loading="lazy"><div class="project-links"><a href="https://hostel-booking-web-app.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Hostel Booking WebApp</h3><p>Browse hostels, check availability, book rooms, make secure payments.</p><div class="project-tech"><span>MERN</span><span>TypeScript</span><span>Razorpay</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Home2.png" alt="Hostel Booking WebApp V2" loading="lazy"><div class="project-links"><a href="https://hostel-booking-web-app-2.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Hostel Booking WebApp V2</h3><p>Enhanced version with better UI/UX and additional features.</p><div class="project-tech"><span>MERN</span><span>TypeScript</span><span>Tailwind</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Weather.png" alt="Weather App" loading="lazy"><div class="project-links"><a href="https://code-with-rahul.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Weather Web App</h3><p>Real-time weather updates, temperature, and forecasts using OpenWeather API.</p><div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>API</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Game_Page.png" alt="Tic Tac Toe" loading="lazy"><div class="project-links"><a href="https://tic-tac-toe-game-rahul-patels-projects-dc68615d.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Tic Tac Toe Game</h3><p>Player vs Player and Player vs AI with Minimax Algorithm.</p><div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>AI</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Chat Section.png" alt="Chat App" loading="lazy"><div class="project-links"><a href="https://chatapplication-rzg4.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div><div class="project-info"><h3>Real-Time Chat Application</h3><p>Join by name and start chatting instantly with Socket.io.</p><div class="project-tech"><span>HTML5</span><span>CSS3</span><span>Socket.io</span><span>Node.js</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/User-Dashboard_Hotel.png" alt="Hotel User Dashboard" loading="lazy"><div class="project-links"><a href="https://github.com/rahulpatel51/Hotel-Management-System" target="_blank"><i class="fab fa-github"></i></a></div></div><div class="project-info"><h3>Hotel User Dashboard</h3><p>User dashboard for hotel guests to book rooms, check-in/out, manage stay.</p><div class="project-tech"><span>Node.js</span><span>Express</span><span>JWT</span><span>MongoDB</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Admin-Dashboard_Hotel.png" alt="Hotel Admin Dashboard" loading="lazy"><div class="project-links"><a href="https://github.com/rahulpatel51/Hotel-Management-System" target="_blank"><i class="fab fa-github"></i></a></div></div><div class="project-info"><h3>Hotel Admin Dashboard</h3><p>Admin panel to manage bookings, customers, and room availability.</p><div class="project-tech"><span>Node.js</span><span>Express</span><span>JWT</span><span>MongoDB</span></div></div></div>
+                    <div class="project-card"><div class="project-image"><img src="Img/Elibrary Managemant System.png" alt="E-Library" loading="lazy"><div class="project-links"><a href="https://github.com/rahulpatel51/E--Library-Management-System" target="_blank"><i class="fab fa-github"></i></a></div></div><div class="project-info"><h3>E-Library Management System</h3><p>Manage library inventory, issue books, and return books online.</p><div class="project-tech"><span>Node.js</span><span>Express</span><span>JWT</span><span>MongoDB</span></div></div></div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Admin-Dashboard_Hotel.png" alt="Project 2">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">Hotel Management System Admin-Dashboard</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">An admin panel to manage hotel bookings, customers, and room availability.  Built with HTML, CSS, JavaScript, Node.js, Express and JWT authentication.</p>
-                        <a href="https://github.com/rahulpatel51/Hotel-Management-System" class="project-link">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Img/Elibrary Managemant System.png" alt="Project 4">
-                    </div>
-                    <div class="project-info">
-                        <h3 style="font-size: 1.5rem; color: #00c3ff;">E-Library Management System</h3>
-                        <p style="font-size: 1rem; color: #ccc; text-align: justify; margin-top: 5px;">
-                            An admin panel to manage library inventory, Issue Book and return books online. Built with HTML, CSS, JavaScript, Node.js, Express and JWT authentication.
-                        </p>
-                        <a href="https://github.com/rahulpatel51/E--Library-Management-System" class="project-link">View Project</a>
-                    </div>
-                </div>                 
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="contact">
-            <h2 class="section-title">Get in Touch</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <div class="container">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info-card">
+                        <h3>Let's work together</h3>
+                        <p>Have a project in mind? I'm just one message away.</p>
+                        <div class="contact-details">
+                            <div><i class="fas fa-phone-alt"></i> +91 9451740460</div>
+                            <div><i class="fas fa-envelope"></i> ra.rahul11161@gmail.com</div>
+                            <div><i class="fab fa-skype"></i> live:rahul_patel</div>
+                        </div>
+                        <div class="social-connect">
+                            <a href="https://github.com/rahulpatel51" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/rahul-patel231/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/RahulPatel11131" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Rahul Patel. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://github.com/rahulpatel51"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/rahul-patel231/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/RahulPatel11131"><i class="fab fa-twitter"></i></a>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">Rahul Patel</div>
+                    <p>Crafting digital experiences with cutting-edge technology and creative design. Full Stack Developer passionate about building scalable web applications.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-section">
+                    <h4>Connect With Me</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/rahulpatel51" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rahul-patel231/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/RahulPatel11131" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/rahulisgone_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rahul Patel. All rights reserved. | Built with <i class="fas fa-heart" style="color: #ff3366;"></i> in India</p>
+                <p class="footer-quote"><i class="fas fa-code"></i> "Keep Building. Keep Growing." <i class="fas fa-rocket"></i></p>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
